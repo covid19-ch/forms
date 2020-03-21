@@ -56,7 +56,7 @@ function download(){
 
   itemsNotFormatted = [
       {
-          model: 'Samsung S7',
+          model: 'Samsung S777777777',
           chargers: '55',
           cases: '56',
           earphones: '57',
