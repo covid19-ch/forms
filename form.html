@@ -1,60 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
-<body>
-<div>
-    <h1>Coronavirus disease COVID-19</h1>
+<body class="mod mod-layout">
+<div class="mod mod-nsbnewsdetails">
 </div>
-<form>
-    <div>
-        <h2>Patient/e</h2>
-        <div>
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name"/>
-            <label for="firstname">Prénom</label>
-            <input type="text" id="firstname" name="firstname"/>
-        </div>
-        <div>
-            <label for="sex">Sexe</label>
-            <select id="sex" name="sex">
-                <option value="woman">f</option>
-                <option value="man">m</option>
-            </select>
-        </div>
-        <div>
-            <label for="street">Rue</label>
-            <input type="text" id="street" name="street"/>
-            <label for="npa">NPA</label>
-            <input type="text" id="npa" name="npa"/>
-            <label for="city">localité</label>
-            <input type="text" id="city" name="city"/>
-            <label for="canton">canton</label>
-            <select id="canton" name="canton">
-                <option value="geneva">Genève</option>
-                <option value="vaud">Vaud</option>
-                <option value="valais">Valais</option>
-                <option value="etc">...</option> <!-- todo -->
-            </select>
-        </div>
-        <div>
-            <label for="phone">Téléphone</label>
-            <input type="text" id="phone" name="phone"/>
-        </div>
-        <div>
-            <label for="nationality">Nationalité</label>
-            <select id="nationality" name="nationality"/>
-                <option value="swiss">Suisse</option>
-                <option value="other">Autre</option>
-            </select>
-            <input type="text" name="other_nationality" id="other_nationality"/>
 
-            <label for="country">Pays de résidence, si pas CH:</label>
-            <input type="text" id="country" name="country"/>
+<div class="container container-main">
+    <div class="container-fluid hidden-xs">
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
         </div>
     </div>
+    <div>
+        <h1>Coronavirus disease COVID-19</h1>
+    </div>
+    <form>
+        <div>
+            <h2>Patient/e</h2>
+            <div>
+                <label for="sex">Sexe</label>
+                <select id="sex" name="sex">
+                    <option value="woman">f</option>
+                    <option value="man">m</option>
+                </select>
+            </div>
+            <div>
+                <label for="street">Rue</label>
+                <input type="text" id="street" name="street"/>
+                <label for="npa">NPA</label>
+                <input type="text" id="npa" name="npa"/>
+                <label for="city">localité</label>
+                <input type="text" id="city" name="city"/>
+                <label for="canton">canton</label>
+                <select id="canton" name="canton">
+                    <option value="geneva">Genève</option>
+                    <option value="vaud">Vaud</option>
+                    <option value="valais">Valais</option>
+                    <option value="etc">...</option> <!-- todo -->
+                </select>
+            </div>
+            <div>
+                <label for="phone">Téléphone</label>
+                <input type="text" id="phone" name="phone"/>
+            </div>
+            <div>
+                <label for="nationality">Nationalité</label>
+                <select id="nationality" name="nationality"/>
+                <option value="swiss">Suisse</option>
+                <option value="other">Autre</option>
+                </select>
+                <input type="text" name="other_nationality" id="other_nationality"/>
 
-</form>
+                <label for="country">Pays de résidence, si pas CH:</label>
+                <input type="text" id="country" name="country"/>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Coronavirus disease COVID-19</h1>
+                    <h2>Uniquement pour les patients hospitalisés</h2>
+                    <h2>Déclaration du résultat clinique suite au résultat de laboratoire positif</h2>
+                    <hr>
+                    <p>
+                        Les résultats doivent être déclarés au service du médecin cantonal et à l’OFSP dans un délai de 24h<br>
+                        Fax de l’OFSP : +41 58 463 87 77<br>
+                        La liste des médecins cantonaux est disponible sous <a href="https://bag.admin.ch/infreporting">bag.admin.ch/infreporting</a>.
+                    </p>
+                    <hr>
+                    <h3>Patient/e</h3>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3"><label for="name">Nom</label></div>
+                            <div class="col-md-3"><input type="text" id="name" name="name"/></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><label for="firstname">Prénom</label></div>
+                            <div class="col-md-3"><input type="text" id="firstname" name="firstname"/></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <label for="sex">Sexe</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <select id="sex" name="sex">
+                                    <option value="woman">f</option>
+                                    <option value="man">m</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="checkbox"> aspiration endotrachéale<br>
+                                <input type="checkbox"> lavage brochno-alvéolaire (LBA)<br>
+                                <input type="checkbox"> sang (sérologie)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
 </body>
 </html>
