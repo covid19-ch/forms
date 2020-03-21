@@ -4,6 +4,57 @@
     <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
-Hello, world!
+<div>
+    <h1>Coronavirus disease COVID-19</h1>
+</div>
+<form>
+    <div>
+        <h2>Patient/e</h2>
+        <div>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name"/>
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="firstname"/>
+        </div>
+        <div>
+            <label for="sex">Sexe</label>
+            <select id="sex" name="sex">
+                <option value="woman">f</option>
+                <option value="man">m</option>
+            </select>
+        </div>
+        <div>
+            <label for="street">Rue</label>
+            <input type="text" id="street" name="street"/>
+            <label for="npa">NPA</label>
+            <input type="text" id="npa" name="npa"/>
+            <label for="city">localité</label>
+            <input type="text" id="city" name="city"/>
+            <label for="canton">canton</label>
+            <select id="canton" name="canton">
+                <option value="volvo">Genève</option>
+                <option value="saab">Vaud</option>
+                <option value="fiat">Valais</option>
+                <option value="audi">...</option>
+            </select>
+        </div>
+        <div>
+            <label for="phone">Téléphone</label>
+            <input type="text" id="phone" name="phone"/>
+        </div>
+        <div>
+            <label for="nationality">Nationalité</label>
+            <select id="nationality" name="nationality"/>
+                <option value="swiss">Suisse</option>
+                <option value="other">Autre</option>
+            </select>
+            <input type="text" name="other_nationality" id="other_nationality"/>
+
+            <label for="country">Pays de résidence, si pas CH:</label>
+            <input type="text" id="country" name="country"/>
+        </div>
+    </div>
+
+</form>
 </body>
 </html>
