@@ -46,6 +46,62 @@ function exportCSVFile(headers, items, fileTitle) {
     }
 }
 
+function getContent() {
+    return "my email"
+}
+
+function sendMail()
+{
+    var headers = {
+      model: 'Phone Model'.replace(/,/g, ''), // remove commas to avoid errors
+      chargers: "Chargers",
+      cases: "Cases",
+      earphones: "Earphones"
+  };
+
+  itemsNotFormatted = [
+      {
+          model: 'Samsung S777777777',
+          chargers: '55',
+          cases: '56',
+          earphones: '57',
+          scratched: '2'
+      },
+      {
+          model: 'Pixel XL',
+          chargers: '77',
+          cases: '78',
+          earphones: '79',
+          scratched: '4'
+      },
+      {
+          model: 'iPhone 7',
+          chargers: '88',
+          cases: '89',
+          earphones: '90',
+          scratched: '6'
+      }
+  ];
+
+  var itemsFormatted = [];
+
+  // format the data
+  itemsNotFormatted.forEach((item) => {
+      itemsFormatted.push({
+          model: item.model.replace(/,/g, ''), // remove commas to avoid errors,
+          chargers: item.chargers,
+          cases: item.cases,
+          earphones: item.earphones
+      });
+  });
+
+    var yourMessage = itemsFormatted;
+    var subject = "Covid-19"
+    document.location.href = "mailto:castronu@gmail.com?subject="
+        + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(yourMessage);
+}
+
 function download(){
   var headers = {
       model: 'Phone Model'.replace(/,/g, ''), // remove commas to avoid errors
