@@ -7,6 +7,7 @@ $(document).ready(function () {
         changeMonth: true,
         changeYear: true,
         showButtonPanel: true,
+        yearRange: "-120:+0",
         dateFormat: "dd/mm/yy"
        }).datepicker("setDate", new Date());
 
