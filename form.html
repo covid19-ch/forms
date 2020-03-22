@@ -15,314 +15,240 @@
             </div>
         </div>
     </div>
-    <div>
-        <h1>Coronavirus disease COVID-19</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Coronavirus disease COVID-19</h1>
+                <h2>Uniquement pour les patients hospitalisés</h2>
+                <h2>Déclaration du résultat clinique suite au résultat de laboratoire positif</h2>
+                <hr>
+                <p>
+                    Les résultats doivent être déclarés au service du médecin cantonal et à l’OFSP dans un délai de
+                    24h<br>
+                    Fax de l’OFSP : +41 58 463 87 77<br>
+                    La liste des médecins cantonaux est disponible sous <a href="https://bag.admin.ch/infreporting">bag.admin.ch/infreporting</a>.
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 no-margin">
+                <hr>
+                <h3>Patient/e</h3>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                        Nom
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="covid19_lastname">
+                    </div>
+                    <div class="col-md-1">
+                        Prénom
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="covid19_firstname">
+                    </div>
+                    <div class="col-md-2">
+                        Date de naissance
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="covid19_birth_date">
+                    </div>
+                    <div class="col-md-2">
+                        <label>Femme <input type="radio" name="sex" id="covid19_female"> </label>
+                        &nbsp;
+                        <label>Homme <input type="radio" name="sex" id="covid19_male"> </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        Rue, n°
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="covid19_street">
+                    </div>
+                    <div class="col-md-2">
+                        Canton
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="covid19_canton">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        NPA
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" placeholder="0000" id="covid19_zipcode">
+                    </div>
+                    <div class="col-md-1">
+                        Localité
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="covid19_city">
+                    </div>
+                    <div class="col-md-2">
+                        Numéro de téléphone
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="+41 xx xxx xx xx" id="covid19_phone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        Nationalité
+                    </div>
+                    <div class="col-md-2">
+                        <label>CH <input type="radio" name="nationality" id="covid19_nationality_ch"> </label>
+                        &nbsp;
+                        <label>Autre : <input type="radio" name="nationality" id="covid19_nationality_other"> </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="0000" id="covid19_nationality_other_text">
+                    </div>
+                    <div class="col-md-2">
+                        Pays de résidence, si pas CH
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="covid19_country">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 no-margin">
+                <hr>
+                <h3>Diagnostic et manifestation</h3>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Manifestations</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_fever">
+                            Fièvre >= 38°C
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_cough">
+                            Toux
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_breathing_disorder">
+                            Troubles respiratoires
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_pneumonia">
+                            Pneumonie (confirmée par imagerie)
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_ards">
+                            ARDS (Acute Respiratory Distress Syndrome)
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_diarrhea">
+                            Diarrhée
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label>
+                            <input type="checkbox" id="covid19_no_symptom">
+                            Aucun symptôme
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Autres symptômes
+                    </div>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="covid19_other_"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Début des manifestations
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="covid19_events_start_date">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Maladies sous-jacentes</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_diabetes">
+                            Diabète
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_cardiovascular disease">
+                            Maladie cardiovasculaire
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_immunosuppression">
+                            Immunosuppression
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_hypertension">
+                            Hypertension
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_chronic_respiratory_disease">
+                            Maladie respiratoire chronique
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_cancer">
+                            Cancer
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label>
+                            <input type="checkbox" id="covid19_no_diseases">
+                            Aucune
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Autres
+                    </div>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="covid19_other_diseases"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <form>
-        <div>
-            <h2>Patient/e</h2>
-            <div>
-                <label for="sex">Sexe</label>
-                <select id="sex" name="sex">
-                    <option value="woman">f</option>
-                    <option value="man">m</option>
-                </select>
-            </div>
-            <div>
-                <label for="street">Rue</label>
-                <input type="text" id="street" name="street"/>
-                <label for="npa">NPA</label>
-                <input type="text" id="npa" name="npa"/>
-                <label for="city">localité</label>
-                <input type="text" id="city" name="city"/>
-                <label for="canton">canton</label>
-                <select id="canton" name="canton">
-                    <option value="geneva">Genève</option>
-                    <option value="vaud">Vaud</option>
-                    <option value="valais">Valais</option>
-                    <option value="etc">...</option> <!-- todo -->
-                </select>
-            </div>
-            <div>
-                <label for="phone">Téléphone</label>
-                <input type="text" id="phone" name="phone"/>
-            </div>
-            <div>
-                <label for="nationality">Nationalité</label>
-                <select id="nationality" name="nationality"/>
-                <option value="swiss">Suisse</option>
-                <option value="other">Autre</option>
-                </select>
-                <input type="text" name="other_nationality" id="other_nationality"/>
-
-                <label for="country">Pays de résidence, si pas CH:</label>
-                <input type="text" id="country" name="country"/>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Coronavirus disease COVID-19</h1>
-                    <h2>Uniquement pour les patients hospitalisés</h2>
-                    <h2>Déclaration du résultat clinique suite au résultat de laboratoire positif</h2>
-                    <hr>
-                    <p>
-                        Les résultats doivent être déclarés au service du médecin cantonal et à l’OFSP dans un délai de 24h<br>
-                        Fax de l’OFSP : +41 58 463 87 77<br>
-                        La liste des médecins cantonaux est disponible sous <a href="https://bag.admin.ch/infreporting">bag.admin.ch/infreporting</a>.
-                    </p>
-                    <hr>
-                    <h3>Patient/e</h3>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-3"><label for="name">Nom</label></div>
-                            <div class="col-md-3"><input type="text" id="name" name="name"/></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3"><label for="firstname">Prénom</label></div>
-                            <div class="col-md-3"><input type="text" id="firstname" name="firstname"/></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <label for="sex">Sexe</label>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-
-                                <select id="sex" name="sex">
-                                    <option value="woman">f</option>
-                                    <option value="man">m</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3">
-                                <input type="checkbox"> aspiration endotrachéale<br>
-                                <input type="checkbox"> lavage brochno-alvéolaire (LBA)<br>
-                                <input type="checkbox"> sang (sérologie)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 no-margin">
-                    <hr>
-                    <h3>Patient/e</h3>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-1">
-                            Nom
-                        </div>
-                        <div class="col-md-2">
-                            <input type="text" class="form-control" id="covid19_lastname">
-                        </div>
-                        <div class="col-md-1">
-                            Prénom
-                        </div>
-                        <div class="col-md-2">
-                            <input type="text" class="form-control" id="covid19_firstname">
-                        </div>
-                        <div class="col-md-2">
-                            Date de naissance
-                        </div>
-                        <div class="col-md-2">
-                            <input type="text" class="form-control" id="covid19_birth_date">
-                        </div>
-                        <div class="col-md-2">
-                            <label>Femme <input type="radio" name="sex" id="covid19_female"> </label>
-                            &nbsp;
-                            <label>Homme <input type="radio" name="sex" id="covid19_male"> </label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-1">
-                            Rue, n°
-                        </div>
-                        <div class="col-md-5">
-                            <input type="text" class="form-control" id="covid19_street">
-                        </div>
-                        <div class="col-md-2">
-                            Canton
-                        </div>
-                        <div class="col-md-1">
-                            <input type="text" class="form-control" id="covid19_canton">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-1">
-                            NPA
-                        </div>
-                        <div class="col-md-1">
-                            <input type="text" class="form-control" placeholder="0000" id="covid19_zipcode">
-                        </div>
-                        <div class="col-md-1">
-                            Localité
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" id="covid19_city">
-                        </div>
-                        <div class="col-md-2">
-                            Numéro de téléphone
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="+41 xx xxx xx xx" id="covid19_phone">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-1">
-                            Nationalité
-                        </div>
-                        <div class="col-md-2">
-                            <label>CH <input type="radio" name="nationality" id="covid19_nationality_ch"> </label>
-                            &nbsp;
-                            <label>Autre : <input type="radio" name="nationality" id="covid19_nationality_other"> </label>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="0000" id="covid19_nationality_other_text">
-                        </div>
-                        <div class="col-md-2">
-                            Pays de résidence, si pas CH
-                        </div>
-                        <div class="col-md-2">
-                            <input type="text" class="form-control" id="covid19_country">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 no-margin">
-                    <hr>
-                    <h3>Diagnostic et manifestation</h3>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4>Manifestations</h4>
-                        </div>
-                        <div class="col-md-2">
-                            <label>
-                                <input type="checkbox" id="covid19_fever">
-                                Fièvre >= 38°C
-                            </label>
-                        </div>
-                        <div class="col-md-2">
-                            <label>
-                                <input type="checkbox" id="covid19_cough">
-                                Toux
-                            </label>
-                        </div>
-                        <div class="col-md-2">
-                            <label>
-                                <input type="checkbox" id="covid19_breathing_disorder">
-                                Troubles respiratoires
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <input type="checkbox" id="covid19_pneumonia">
-                                Pneumonie (confirmée par imagerie)
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <input type="checkbox" id="covid19_ards">
-                                ARDS (Acute Respiratory Distress Syndrome)
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <input type="checkbox" id="covid19_diarrhea">
-                                Diarrhée
-                            </label>
-                        </div>
-                        <div class="col-md-6">
-                            <label>
-                                <input type="checkbox" id="covid19_no_symptom">
-                                Aucun symptôme
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            Autres symptômes
-                        </div>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="covid19_other_"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            Début des manifestations
-                        </div>
-                        <div class="col-md-2">
-                            <input type="text" class="form-control" id="covid19_events_start_date">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4>Maladies sous-jacentes</h4>
-                        </div>
-                        <div class="col-md-2">
-                            <label>
-                                <input type="checkbox" id="covid19_diabetes">
-                                Diabète
-                            </label>
-                        </div>
-                        <div class="col-md-2">
-                            <label>
-                                <input type="checkbox" id="covid19_cardiovascular disease">
-                                Maladie cardiovasculaire
-                            </label>
-                        </div>
-                        <div class="col-md-2">
-                            <label>
-                                <input type="checkbox" id="covid19_immunosuppression">
-                                Immunosuppression
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <input type="checkbox" id="covid19_hypertension">
-                                Hypertension
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <input type="checkbox" id="covid19_chronic_respiratory_disease">
-                                Maladie respiratoire chronique
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <input type="checkbox" id="covid19_cancer">
-                                Cancer
-                            </label>
-                        </div>
-                        <div class="col-md-6">
-                            <label>
-                                <input type="checkbox" id="covid19_no_diseases">
-                                Aucune
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            Autres
-                        </div>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="covid19_other_diseases"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </form>
 </div>
 </body>
