@@ -67,7 +67,5 @@ function getCheckboxValue(id) {
     }
 }
 
-function getTextAreaValue(id) {
-    return document.getElementById(id).checked === 1 || 0;
-}
+
 
