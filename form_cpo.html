@@ -50,11 +50,11 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-6">date de détection</div>
-                        <div class="col-md-6"><input type="text" id="detectionDate"></div>
+                        <div class="col-md-6"><input type="text" id="covid19_detection_date"></div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">date du prélèvement</div>
-                        <div class="col-md-6"><input type="text" id="sampleDate"></div>
+                        <div class="col-md-6"><input type="text" id="covid19_sample_date"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -64,17 +64,17 @@
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><input type="checkbox" id="nasopharyngealSmear"> frottis nasopharyngé</li>
-                                <li><input type="checkbox" id="oralSmear"> frottis buccal</li>
-                                <li><input type="checkbox" id="expectoration"> expectoration</li>
-                                <li>autre<br><textarea id="other"></textarea></li>
+                                <li><input type="checkbox" id="covid19_nasopharyngeal_smear"> frottis nasopharyngé</li>
+                                <li><input type="checkbox" id="covid19_oral_smear"> frottis buccal</li>
+                                <li><input type="checkbox" id="covid19_expectoration"> expectoration</li>
+                                <li>autre<br><textarea id="covid19_other_analysis"></textarea></li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><label><input type="checkbox" id="endotrachealAspiration"> aspiration endotrachéale</label></li>
-                                <li><label><input type="checkbox" id="bal"> lavage brochno-alvéolaire (LBA)</label></li>
-                                <li><label><input type="checkbox" id="serology"> sang (sérologie)</label></li>
+                                <li><label><input type="checkbox" id="covid19_endotracheal_aspiration"> aspiration endotrachéale</label></li>
+                                <li><label><input type="checkbox" id="covid19_bronchoalveolar_lavage_bal"> lavage brochno-alvéolaire (LBA)</label></li>
+                                <li><label><input type="checkbox" id="covid19_serology"> sang (sérologie)</label></li>
                             </ul>
                         </div>
                     </div>
@@ -93,10 +93,10 @@
                                 E gene target
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="E_gene_target" id="geneTargetEpositive"> positif</label>
+                                <label><input type="radio" name="E_gene_target" id="covid19_gene_target_e_positive"> positif</label>
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="E_gene_target" id="geneTargetEnegative"> négatif</label>
+                                <label><input type="radio" name="E_gene_target" id="covid19_gene_target_e_negative"> négatif</label>
                             </div>
                         </div>
                         <div>
@@ -104,10 +104,10 @@
                                 RdRp gene target
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="RdRp_gene_target" id="geneTargetRdrpPositive"> positif</label>
+                                <label><input type="radio" name="RdRp_gene_target" id="covid19_gene_target_rdrp_positive"> positif</label>
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="RdRp_gene_target" id="geneTargetRdrpNegative"> négatif</label>
+                                <label><input type="radio" name="RdRp_gene_target" id="covid19_gene_target_rdrp_negative"> négatif</label>
                             </div>
                         </div>
                         <div>
@@ -115,10 +115,10 @@
                                 N gene target
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="N_gene_target" id="geneTargetNpositive"> positif</label>
+                                <label><input type="radio" name="N_gene_target" id="covid19_gene_target_n_positive"> positif</label>
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="N_gene_target" id="geneTargetNnegative"> négatif</label>
+                                <label><input type="radio" name="N_gene_target" id="covid19_gene_target_n_negative"> négatif</label>
                             </div>
                         </div>
                     </div>
@@ -127,16 +127,16 @@
                         <h5>Nouvelles méthodes de séquençage *</h5>
                         <div>
                             <div class="col-md-2 no-margin">
-                                <label><input type="radio" name="new_method"> oui</label>
+                                <label><input type="radio" name="new_method" id="covid19_new_sequencing_methods_positive"> oui</label>
                             </div>
                             <div class="col-md-2 no-margin">
-                                <label><input type="radio" name="new_method"> non</label>
+                                <label><input type="radio" name="new_method" id="covid19_new_sequencing_methods_negative"> non</label>
                             </div>
                             <div clas="col-md-8"></div>
                         </div>
                         <div>
                             <div class="col-md-12 no-margin">
-                                <textarea></textarea>
+                                <textarea id="covid19_new_sequencing_methods_note"></textarea>
                             </div>
                         </div>
                         <div>
@@ -144,10 +144,10 @@
                                 séquence analogue au SARS-CoV-2
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="seq_SARS_CoV_2"> oui</label>
+                                <label><input type="radio" name="seq_SARS_CoV_2" id="covid19_seq_SARS_CoV_2_positive"> oui</label>
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="seq_SARS_CoV_2"> non</label>
+                                <label><input type="radio" name="seq_SARS_CoV_2" id="covid19_seq_SARS_CoV_2_negative"> non</label>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                         <h5>autre méthode</h5>
                         <div>
                             <div class="col-md-12">
-                                <textarea></textarea>
+                                <textarea id="covid19_other-method"></textarea>
                             </div>
                         </div>
                     </div>
@@ -180,10 +180,10 @@
                                 SARS-CoV-2 IgM
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgM"> positif</label>
+                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgM" id="covid19_elisa_sars_cov_2_igm_positive"> positif</label>
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgM"> négatif</label>
+                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgM" id="covid19_elisa_sars_cov_2_igm_negative"> négatif</label>
                             </div>
                         </div>
                         <div>
@@ -191,10 +191,10 @@
                                 SARS-CoV-2 IgG
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgG"> positif</label>
+                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgG" id="covid19_elisa_sars_cov_2_igg_positive"> positif</label>
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgG"> négatif</label>
+                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgG" id="covid19_elisa_sars_cov_2_igg_negative"> négatif</label>
                             </div>
                         </div>
                         <div>
@@ -202,10 +202,10 @@
                                 SARS-CoV-2 IgA
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgA"> positif</label>
+                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgA" id="covid19_elisa_sars_cov_2_iga_positive"> positif</label>
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgA"> négatif</label>
+                                <label><input type="radio" name="ELISA_SARS_CoV_2_IgA" id="covid19_elisa_sars_cov_2_iga_negative"> négatif</label>
                             </div>
                         </div>
                     </div>
@@ -217,10 +217,10 @@
                                 SARS-CoV-2 IgM
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="IFA_SARS_CoV_2_IgM"> positif</label>
+                                <label><input type="radio" name="IFA_SARS_CoV_2_IgM" id="covid19_ifa_sars_cov_2_igm_positive"> positif</label>
                             </div>
                             <div class="col-md-3 no-margin">
-                                <label><input type="radio" name="IFA_SARS_CoV_2_IgM"> négatif</label>
+                                <label><input type="radio" name="IFA_SARS_CoV_2_IgM" id="covid19_ifa_sars_cov_2_igm_negative"> négatif</label>
                             </div>
                         </div>
                         <div>
@@ -228,10 +228,10 @@
                                 SARS-CoV-2 IgG
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="IFA_SARS_CoV_2_IgG"> positif</label>
+                                <label><input type="radio" name="IFA_SARS_CoV_2_IgG" id="covid19_ifa_sars_cov_2_igg_positive"> positif</label>
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="IFA_SARS_CoV_2_IgG"> négatif</label>
+                                <label><input type="radio" name="IFA_SARS_CoV_2_IgG" id="covid19_ifa_sars_cov_2_igg_negative"> négatif</label>
                             </div>
                         </div>
                     </div>
@@ -243,10 +243,10 @@
                                 SARS-CoV-2 pseudovirus (SARS)
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="SARS_CoV_2_pseudovirus"> positif</label>
+                                <label><input type="radio" name="SARS_CoV_2_pseudovirus"  id="covid19_sars_cov_2_pseudovirus_positive"> positif</label>
                             </div>
                             <div class="col-md-3">
-                                <label><input type="radio" name="SARS_CoV_2_pseudovirus"> négatif</label>
+                                <label><input type="radio" name="SARS_CoV_2_pseudovirus"  id="covid19_sars_cov_2_pseudovirus_negative"> négatif</label>
                             </div>
                         </div>
                     </div>

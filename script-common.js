@@ -1,4 +1,38 @@
 
+// A $( document ).ready() block.
+$(document).ready(function () {
+    $('[id$="_date"]').each(function(){
+
+        $(this).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: "dd/mm/yy"
+       }).datepicker("setDate", new Date());
+
+    })
+
+});
+
+function downloadLab() {
+
+    var headers = {}
+    var itemsFormatted = {}
+    $('[id^="covid19_"]').each(function(){
+
+        let headerName = $(this).context.id.replace('covid19_','')
+        let htmlElement = $(this).context;
+        headers[headerName] = headerName
+        itemsFormatted[headerName] = getFormatted(htmlElement)
+
+    })
+
+    var fileTitle = 'test'; // or 'my-unique-title'
+    exportCSVFile(headers, [itemsFormatted], fileTitle);
+}
+
+
+
 function convertToCSV(objArray) {
     var array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
     var str = '';
@@ -32,7 +66,7 @@ function exportCSVFile(headers, items, fileTitle) {
 
     var exportedFilenmae = fileTitle + '.csv' || 'export.csv';
 
-    var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    var blob = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
     if (navigator.msSaveBlob) { // IE 10+
         navigator.msSaveBlob(blob, exportedFilenmae);
     } else {
@@ -50,20 +84,23 @@ function exportCSVFile(headers, items, fileTitle) {
     }
 }
 
-function getContent() {
-    return "my email"
-}
 
 
-function getFormattedValue(id) {
-    return document.getElementById(id).value.replace(/,/g, '');
-}
+function getFormatted(htmlElement) {
 
-function getCheckboxValue(id) {
-    if (document.getElementById(id).checked) {
-        return 1
-    } else {
-        return 0
+    switch (htmlElement.type) {
+        case "checkbox":
+        case "radio":
+            if (htmlElement.checked) {
+                return 1
+            } else {
+                return 0
+            }
+            break;
+        case "text":
+        case "textarea":
+            return htmlElement.value.replace(/,/g, '')
+            break;
     }
 }
 
