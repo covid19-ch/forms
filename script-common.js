@@ -59,4 +59,15 @@ function getFormattedValue(id) {
     return document.getElementById(id).value.replace(/,/g, '');
 }
 
+function getCheckboxValue(id) {
+    if (document.getElementById(id).checked) {
+        return 1
+    } else {
+        return 0
+    }
+}
+
+function getTextAreaValue(id) {
+    return document.getElementById(id).checked === 1 || 0;
+}
 

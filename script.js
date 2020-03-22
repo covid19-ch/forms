@@ -17,22 +17,6 @@ function convertToCSV(objArray) {
     return str;
 }
 
-function setDate(id) {
-    $('#'+id).datepicker({
-        changeMonth: true,
-        changeYear: true,
-        showButtonPanel: true,
-        dateFormat: "dd/mm/yy"
-    }).datepicker("setDate", new Date());
-
-}
-
-// A $( document ).ready() block.
-$( document ).ready(function() {
-    console.log( "ready!" );
-    setDate('detectionDate');
-    setDate('sampleDate');
-});
 
 
 function exportCSVFile(headers, items, fileTitle) {
