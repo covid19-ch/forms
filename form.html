@@ -2,7 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <title>Coronavirus disease COVID-19 - Uniquement pour les patients hospitalisés</title>
     <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script type="application/javascript" src="script-common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/overrides.css">
 </head>
 <body class="mod mod-layout">
 <div class="mod mod-nsbnewsdetails">
@@ -16,18 +22,19 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Coronavirus disease COVID-19</h1>
-                <h2>Uniquement pour les patients hospitalisés</h2>
-                <h2>Déclaration du résultat clinique suite au résultat de laboratoire positif</h2>
-                <hr>
-                <p>
-                    Les résultats doivent être déclarés au service du médecin cantonal et à l’OFSP dans un délai de
-                    24h<br>
-                    Fax de l’OFSP : +41 58 463 87 77<br>
-                    La liste des médecins cantonaux est disponible sous <a href="https://bag.admin.ch/infreporting">bag.admin.ch/infreporting</a>.
-                </p>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Coronavirus disease COVID-19</h1>
+                    <h2>Uniquement pour les patients hospitalisés</h2>
+                    <h2>Déclaration du résultat clinique suite au résultat de laboratoire positif</h2>
+                    <hr>
+                    <p>
+                        Les résultats doivent être déclarés au service du médecin cantonal et à l’OFSP dans un délai de
+                        24h<br>
+                        Fax de l’OFSP : +41 58 463 87 77<br>
+                        La liste des médecins cantonaux est disponible sous <a href="https://bag.admin.ch/infreporting">bag.admin.ch/infreporting</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -247,9 +254,30 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-4">
+                    <input type="button" class="btn-primary" value="Créer pièce jointe pour mail" onclick="downloadLab('positive_case')">
+                </div>
+                <div class="col-md-3">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-4">
+                    Envoyer le fichier généré à <a href="mailto:covid-19@hin.infreport.ch?subject=Covid-19 report positive case">covid-19@hin.infreport.ch</a> (mail securisé)
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
         </div>
     </div>
+
     </form>
+</div>
 </div>
 </body>
 </html>

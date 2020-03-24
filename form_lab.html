@@ -11,13 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css/overrides.css">
 </head>
 <body class="mod mod-layout">
-<div class="mod mod-nsbnewsdetails">
-    &nbsp;
+<div class="mod mod-nsbnewsdetails">    &nbsp;
 </div>
+
 <div class="container container-main">
-    <!--    <header style="background-size: cover; background-image:" role="banner">-->
-    <!--        ...-->
-    <!--    </header>-->
     <div class="container-fluid hidden-xs">
         <div class="row">
             <div class="col-sm-12">
@@ -468,11 +465,20 @@
                 <div class="col-md-5">
                 </div>
                 <div class="col-md-4">
-                    <input type="button" class="btn-primary" value="create mail attachment" onclick="downloadLab()">
+                    <input type="button" class="btn-primary" value="Créer pièce jointe pour mail" onclick="downloadLab('lab')">
                 </div>
                 <div class="col-md-3">
                 </div>
 
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-4">
+                    Envoyer le fichier généré à <a href="mailto:covid-19@hin.infreport.ch?subject=Covid-19 report laboratory">covid-19@hin.infreport.ch</a> (mail securisé)
+                </div>
+                <div class="col-md-3">
+                </div>
             </div>
         </div>
     </div>
