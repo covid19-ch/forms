@@ -6,7 +6,7 @@ We basically create a web version of the forms [available here](https://www.bag.
 
 The idea is that the reporter attaches the __CSV__ file (or files) to the email sent to the HIN secured address covid-19@hin.infreport.ch.
  
-We hope that this code can be used and extended to whom it may concern.
+We hope that this code can be used and extended as much as possible.
 
 ## For developers
 
