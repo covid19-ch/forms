@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 });
 
-function downloadLab() {
+function downloadLab(formName) {
 
     var headers = {}
     var itemsFormatted = {}
@@ -28,7 +28,7 @@ function downloadLab() {
 
     })
 
-    var fileTitle = 'test'; // or 'my-unique-title'
+    var fileTitle = 'covid19_report_'+formName; // or 'my-unique-title'
     exportCSVFile(headers, [itemsFormatted], fileTitle);
 }
 
@@ -41,7 +41,7 @@ function convertToCSV(objArray) {
     for (var i = 0; i < array.length; i++) {
         var line = '';
         for (var index in array[i]) {
-            if (line != '') line += ','
+            if (line != '') line += ';'
 
             line += array[i][index];
         }
