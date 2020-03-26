@@ -8,13 +8,13 @@ The idea is that the reporter attaches the __CSV__ file (or files) to the email 
  
 We hope that this code can be used and extended to whom it may concern.
 
-##For developers
+## For developers
 
 In order to extend or update the forms, these rules need to be followed:
 
-* HTML elements ids need to be prefixed with covid19_* in order to be transformed in CSV data (the id without that prefix will be used as header name).
-* Date picker elements need to be suffixed with _date
+* HTML elements ids need to be prefixed with *covid19_* in order to be transformed in CSV data (the id without that prefix will be used as header name)
+* Date picker elements need to be suffixed with *_date*
 
 
 
-Theme generated with [admin.ch styles](https://github.com/swiss/styleguide) 
+Theme generated with [admin.ch styles](https://github.com/swiss/styleguide). 
